@@ -73,6 +73,9 @@ main form {
     border-top: 2px solid #D9D9D9;
     width: 100%;
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
 }
 
 .todo {
@@ -98,6 +101,13 @@ main form {
     width: 20px;
 }
 
-.deleted {
-    background-color: #F5D1D4;
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+    }
 }

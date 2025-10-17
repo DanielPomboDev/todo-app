@@ -15,7 +15,7 @@
 
         <form>
             <input type="text" name="todo-input" id="todoInput" placeholder="Add Todo">
-            <button type="submit" id="addButton"><i class="fa-solid fa-plus"></i></button>
+            <button id="addButton"><i class="fa-solid fa-plus"></i></button>
         </form>
 
         <div class="count-row">
@@ -23,13 +23,10 @@
             <p>Completed <span>0</span></p>
         </div>
 
-        <section class="todo-list">
-            <div class="todo">
-                <input type="checkbox">
-                <p>Description</p>
-                <img src="trash.png" alt="Trash icon">
-            </div>
-        </section>
+        <ul class="todo-list">
+        </ul>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
